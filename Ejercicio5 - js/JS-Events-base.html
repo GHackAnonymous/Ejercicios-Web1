@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Testing JavaScript</title>
+	    <script>
+	        function writeText(str){
+				// print in the console: "Event: <event name taken from str>"
+				// you should get the paragraph element from the DOM
+				// you should change the paragraph content with: "Event: <event name taken from str>"
+				if(document.getElementById('myTextInput').focus){
+					var obj = document.getElementById("myTextInput");
+					if (obj){
+					   obj.click();   
+					   console.log("Event: "+str);
+					   var Valor = document.getElementById('myTextInput2').value;
+					   console.log("Value: "+ valor);
+					}
+				}else if(document.getElementById('myTextInput').onblur){
+					var obj = document.getElementById("myTextInput");
+					if (obj){
+					   obj.click();   
+					   console.log("Event: "+str);
+					    var Valor = document.getElementById('myTextInput2').value;
+					   console.log("Value: "+ valor);
+					}
+				}else if(document.getElementById('myTextInput2').onblur){
+					var obj = document.getElementById("myTextInput2");
+					if (obj){
+					   obj.click();   
+					   console.log("Event: "+str);
+					   var Valor = document.getElementById('myTextInput2').value;
+					   console.log("Value: "+ valor);
+					}
+				}else if(document.getElementById('myClickBtn').onclick){
+					var obj = document.getElementById("myClickBtn");
+					if (obj){
+					   obj.click();   
+					   console.log("Event"+str);
+					}
+				}
+				/*var x = window.event;
+				console.log("Event: " + x );
+
+				if (document.getElementById('myTextInput').focus) {
+	         		
+	      		}else if(document.getElementById('myTextInput').focused){
+	      			var obj = document.getElementById("myTextInput");
+					if (obj){
+					   obj.click();   
+					   console.log("focused");
+					}
+	      		}*/
+
+
+	        }
+	    </script>
+	</head>
+
+	<!-- An event should be executed when all the DOM is loaded
+	and another event when the window of the browser is resic-->
+	<body>
+
+		<h1>Testing DOM events</h1>
+
+		<h2>open console log to see the events</h2>
+
+		<form>
+			<!-- An event should be executed when the input gets the focus (with tabulator or mouse click for example),
+			another event should be executed when the focus is lost -->
+			<input type='text' id="myTextInput" placeholder="When focused/unfocused on me" onfocus="writeText('onfocus')" onblur="writeText('onblur')" /><br/><br/>
+
+			<!-- An event should be executed when the input content is changed (the focus must be lost to see the result) -->
+			<input type='text' id="myTextInput2" placeholder="When the text here is changed" onblur="writeText('onblur2')"/><br/><br/>
+
+			<!-- onclick: This is the example one, use it for testing the function -->
+			<button type='button' id="myClickBtn" onclick="writeText('onclick')" >When clicked</button><br/><br/>
+
+			<!-- An event should be executed when the mouse is being clicked,
+			another event should be executed when the mouse is released -->
+			<button type='button' >Similar but when I am pressed or released</button><br/><br/>
+
+			<!-- An event should be executed when the mouse is being clicked with the right button -->
+			<button type='button' >When right-clicked on me</button><br/><br/>
+
+			<!-- An event should be executed when the mouse is being double clicked -->
+			<button type='button'">When double clicked on me</button><br/><br/>
+
+			<br/><br/><br/>
+
+			<!-- An event should be executed when the mouse passes over the button,
+			another event should be executed when the mouse is not over the button anymore -->
+			<button type='button'>When the mouse is over me and when it is out of me</button><br/>
+		</form>
+
+		<hr/>
+		<p id="writeMe">Nothing done yet</p>
+		<hr/>
+
+		<p>More info at <a href="https://developer.mozilla.org/en-US/docs/Web/Events">MDN - Event reference</a> or at <a href="http://www.w3schools.com/jsref/dom_obj_event.asp">w3schools.com - HTML DOM Events</a></p>
+	</body>
+</html>
