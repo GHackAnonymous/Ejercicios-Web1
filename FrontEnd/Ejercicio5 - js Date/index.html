@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <script type="text/javascript">
+    
+    var today = new Date();
+
+    window.onload = function() {
+      doStuff();
+    };
+
+    function doStuff(){
+      var list = document.getElementsByTagName("p")[0].innerHTML= ""+today;
+    }
+
+  </script>
+</head>
+
+<body>
+	<section>
+		<p></p>
+	</section>
+</body>
+</html>
