@@ -45,17 +45,35 @@ public class session extends HttpServlet {
 		String user = request.getParameter("user");
 		String pass = request.getParameter("pass");
 		
-		if(user != null && pass != null){
-			if(user.equalsIgnoreCase(MyUser) && pass.equalsIgnoreCase(MyPass)){
-				session.setAttribute("username", user);
-				response.sendRedirect(response.encodeRedirectURL("ok.jsp"));
-			}else {
-				session.setAttribute("error", "Wrong username or password");
-				response.sendRedirect(response.encodeRedirectURL("index.jsp?stado=error"));
+		System.out.println(user);
+		System.out.println(pass);
+		System.out.println(session.getAttribute(user));
+		
+		
+		if(session.getAttribute(user) != null && session.getAttribute(user).equals(MyUser)){  
+	        //logout
+			session.invalidate();
+			session = null;
+			
+			session.setAttribute("error", "tienes que logearte");
+			response.sendRedirect(response.encodeRedirectURL("index.jsp"));
+	    } else if(session.getAttribute(user) == null){
+	    	//login
+	    	System.out.println("Pasa por sesion == null");
+	    	if(user != null && pass != null){
+	    		System.out.println("user != null y pass != null");
+				if(user.equalsIgnoreCase(MyUser) && pass.equalsIgnoreCase(MyPass)){
+					session.setAttribute("username", user);
+					response.sendRedirect(response.encodeRedirectURL("ok.jsp"));	
+				}else if(!user.equalsIgnoreCase(MyUser) && !pass.equalsIgnoreCase(MyPass)){
+					session.setAttribute("error", "Wrong username or password");
+					response.sendRedirect(response.encodeRedirectURL("index.jsp"));
+				}
+			}else if(user == null && pass == null){
+				session.setAttribute("error", "tienes que logearte");
+				response.sendRedirect(response.encodeRedirectURL("index.jsp"));
 			}
-		}
-		
-		
+	    }
 	}
 
 }

@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+    
+<%
+String isLogin = (String)session.getAttribute("error");
+
+%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,7 +16,12 @@
 	</head>
 	<body>
 		<header>
-			<h1>Dragon Ball Plots</h1>
+			<div>
+				<h1>Dragon Ball Plots</h1>
+			</div>
+			<div>
+				 
+			</div>
 			<nav>
 				<div id="div_menu_db"><a href="cambiarPagina?mensaje=db">Dragon Ball</a></div>
 				<div id="div_menu_dbz"><a href="cambiarPagina?mensaje=dbz">Dragon Ball Z</a></div>
@@ -19,7 +29,26 @@
 			</nav>
 		</header>
 		<section>
-			<%@ include file="login.jsp" %>  
+			<%
+				if(isLogin != null){
+					out.println(isLogin);
+					if(isLogin.equalsIgnoreCase("Wrong username or password")){
+						out.println("Error");
+					%>
+						<%@ include file="login.jsp" %>
+					<%
+					}else{
+					%>
+						<%@ include file="login.jsp" %>
+					<%
+					}
+				}else{
+				%>
+					<%@ include file="login.jsp" %>
+				<%
+				}
+			%> 
+			  
 		</section>
 		<footer>
 			<div id="div_footer">

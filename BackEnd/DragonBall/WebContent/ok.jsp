@@ -19,6 +19,9 @@ String username = (String)session.getAttribute("username");
 	<body>
 		<header>
 			<h1>Dragon Ball Plots</h1>
+			<form action="session" method="post" value="logout">
+  				<button type="submit">Logout</button>
+  			</form>
 			<nav>
 				<div id="div_menu_db"><a href="cambiarPagina?mensaje=db">Dragon Ball</a></div>
 				<div id="div_menu_dbz"><a href="cambiarPagina?mensaje=dbz">Dragon Ball Z</a></div>
