@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>cambiarPagina
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=uft-8">
+		
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		
+		<title>Dragon Ball web</title>
+	</head>
+	<body>
+		<header>
+			<h1>Dragon Ball Plots</h1>
+			<nav>
+				<div id="div_menu_db"><a href="cambiarPagina?mensaje=db">Dragon Ball</a></div>
+				<div id="div_menu_dbz"><a href="cambiarPagina?mensaje=dbz">Dragon Ball Z</a></div>
+				<div id="div_menu_dbgt"><a href="cambiarPagina?mensaje=dbgt">Dragon Ball GT</a></div>
+			</nav>
+		</header>
+		<section>
+			<h1>Dragon Ball GT</h1>
+			<p>
+				Five years after the end of the Dragon Ball Z anime (10 years in the Funimation dub),[1] Goku is turned back into a child by the Black Star Dragon Balls (ãƒ€ãƒ¼ã‚¯ãƒ‰ãƒ©ã‚´ãƒ³ãƒœãƒ¼ãƒ« DÄ�ku Doragon BÅ�ru, lit. "Dark Dragon Balls") used by Pilaf and is forced to travel across the universe to retrieve them along with his granddaughter Pan and Trunks. The trio go through various adventures in their journey to find the Black Star Dragon Balls, until they encounter the evil artificial Tuffle, Baby, who intends to destroy the Saiyan race.
+
+				Baby has the ability to invade other people's bodies and turn them into Tuffles, as well as using a body to combine it with his own power and become a fighter. After turning practically all of the Earth's population, including the Saiyans, into Tuffles, Baby decides to remain inside Vegeta's body and use it to confront Goku. Goku fights him and is defeated, but after having his tail regenerated, achieves the level of Super Saiyan 4 (è¶…ã‚µã‚¤ãƒ¤äººãƒ•ã‚©ãƒ¼ SÅ«pÄ� Saiya-jin FÅ�), and destroys Baby, propelling him into the sun with a Kamehameha. Piccolo then sacrifices himself to turn the Black Star Dragon Balls into stone permanently when the Earth explodes after Goku and the others helped everyone evacuate to the Tuffle Planet.
+				
+				A year after Baby's defeat, Dr. Myuu (Baby's creator) and Dr. Gero (creator of the Red Ribbon Army androids), create a replica of Android 17 and have it fuse with the original Android 17, creating Super 17. Super 17 at first seems impervious to Goku's attacks, but when Android 18 attacks him for killing Krillin, Goku takes advantage of the distraction to penetrate through Super 17 with his Dragon Fist technique, then fires a Kamehameha through the wound.
+				
+				Due to overuse of the Dragon Balls, seven Shadow Dragons are then created. All but the most powerful, Syn Shenron, are defeated. Syn Shenron appears to be losing until he absorbs the Dragon Balls and gains more power, becoming Omega Shenron and overwhelming Goku. Goku is about to sacrifice himself to destroy the evil dragon, but then Vegeta turns up in Super Saiyan 4 form, thanks to Bulma's new device, the Blutz Wave Generator. Goku and Vegeta fuse, creating Gogeta, who uses his immense power to taunt Omega Shenron. However, their fusion then ends and Goku loses his Super Saiyan 4 form along with Vegeta. Eventually, using the energy of every living being in the universe, Goku makes a Spirit Bomb powerful enough to destroy Omega Shenron.
+				
+				The real Shenlong appears to grant Goku and his friends one last wish, and then proceeds to disappear â€” along with Goku and the Dragon Balls. Several decades later, Goku's great-great-grandson, Goku Jr., participates in the World Tournament as his grandmother Pan cheers for him. Pan then sees Goku and tries to approach him but Goku disappears into the crowd. Goku then leaves the World Tournament with a flashback of his timeline. After the flashback of his timeline ends, Goku then catches his power pole and rides off on his nimbus cloud.
+				
+				Dragon Ball GT sucked!!!
+			</p>
+			<img src="./images/dbz.png" alt="dragon ball gt"></img>
+		</section>
+		<footer>
+			<div id="div_footer">
+				<p>Coppyleft Alain Perez</p>
+			</div>
+		</footer>
+	</body>
+</html>
