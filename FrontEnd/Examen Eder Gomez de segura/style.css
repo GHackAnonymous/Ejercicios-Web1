@@ -1,0 +1,99 @@
+*{
+	width:100%;
+	float: left;
+}
+header{
+	width:100%;
+	border: solid;
+	border-radius: 10px;
+	float: left;
+	text-align: center;
+}
+.navoption{
+	width: calc((100% / 6) - 4px);
+	background-color: blue;
+	color: white;
+	border-radius: 10px;
+	float: left;
+	margin-left: 2px;
+	
+}
+.navoption>a{
+	text-decoration: none;
+	text-decoration-color: white;
+	color: white;
+	text-align: center;
+}
+.navoption:hover{
+	/* lorem nisup */
+}
+article{
+	width: 100%;
+	float:left;
+	align-content: center;
+}
+section{
+	border: 2px solid;
+	margin: 1px;
+	width: calc((100% /4) - 2px);
+	max-height: 10%;
+	height:10%;
+}
+section:hover{
+	box-shadow: -8px -8px 20px 0px grey;
+}
+section>h2{
+	background-color: black;
+	color: white;
+	text-align: center;
+	
+}
+section>p{
+	float: left;
+	
+}
+section>img{
+	float: right;
+	display: block;
+	max-height: 50px;
+	max-width: 100px;
+	height: 50 px;
+	width: 100px;
+}
+footer{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	float:right;
+	background-color: black;
+	align-content: right;
+	text-align: right;
+	color: white;
+	margin-top: 10px;
+}
+footer>button{
+	float:left;
+	width: 100px;
+	margin-left: 2px;
+}
+footer>p{
+	float:left;
+	width: calc(100% / 3);
+}
+
+@media (MAX-width: 750px) {
+	section{
+	bolder: clear;
+	width: calc(100% / 3);
+	max-height: 10%;
+	height:10%;
+}
+}
+@media (MAX-width: 500px) {
+	section{
+		width: 100%;
+	}
+	.navoption{
+		width: 100%;
+	}
+}
