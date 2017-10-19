@@ -1058,3 +1058,33 @@ java.io.IOException: http://www.eclipsecolorthemes.org/plugin is not a valid rep
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-10-19 10:41:26.668
+!MESSAGE Server returned lastModified <= 0 for http://www.eclipsecolorthemes.org/plugin/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-10-19 10:41:27.261
+!MESSAGE Server returned lastModified <= 0 for http://www.eclipsecolorthemes.org/plugin/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-10-19 10:41:27.762
+!MESSAGE Server returned lastModified <= 0 for http://www.eclipsecolorthemes.org/plugin/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-10-19 10:41:28.262
+!MESSAGE Server returned lastModified <= 0 for http://www.eclipsecolorthemes.org/plugin/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-10-19 10:41:28.762
+!MESSAGE Server returned lastModified <= 0 for http://www.eclipsecolorthemes.org/plugin/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-10-19 10:41:29.262
+!MESSAGE Server returned lastModified <= 0 for http://www.eclipsecolorthemes.org/plugin/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-10-19 10:41:29.840
+!MESSAGE Server returned lastModified <= 0 for http://www.eclipsecolorthemes.org/plugin/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-10-19 10:41:30.356
+!MESSAGE Server returned lastModified <= 0 for http://www.eclipsecolorthemes.org/plugin/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-10-19 10:41:30.871
+!MESSAGE Server returned lastModified <= 0 for http://www.eclipsecolorthemes.org/plugin/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-10-19 10:41:31.403
+!MESSAGE Server returned lastModified <= 0 for http://www.eclipsecolorthemes.org/plugin/content.jar
