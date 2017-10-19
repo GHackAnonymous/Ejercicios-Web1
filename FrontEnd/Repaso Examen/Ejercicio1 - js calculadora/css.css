@@ -1,0 +1,10 @@
+header{
+	width: 100%;
+}
+section{
+	width: 100%;
+}
+.calc-Button{
+	width: calc((100% / 5) - 10px);
+	/*height: calc(100% / 4);*/
+}

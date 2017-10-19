@@ -1,0 +1,52 @@
+aside{
+	width: 25%;
+	border: solid black 1px;
+	float: right;
+	padding-top: 20px;
+	text-align:center;
+	padding-bottom: 20px;	
+}
+#news-global{
+	margin-left: 10px; 
+
+}
+aside>h2{
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align:center;
+	width: 104%;
+	padding-bottom: 10px;
+}
+aside>figure>img{
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px;
+}
+#news-global>h2{
+	font-weight: bold; 
+}
+#news-global>.news>h3{
+	font-weight: bold; 
+	margin-bottom: 10px;
+}
+#news-global>.news>article>h4{
+	font-weight: bold; 
+	margin-bottom: 10px;
+}
+aside>figure>figcaption{
+	width: 200px;
+	padding-left: 21.5%;
+}
+/*
+footer{
+	position: relative;
+}
+*/
+/*
+En los .jpg muestras como el footer se coloca encima de los elementos(véase sticky footer) 
+mientras que en el pdf pides que no haga overlap.  
+Si sacas de comentarios este último atributo para el CSS el footer se te quedará abajo del todo. 
+ Mientras que no lo hagas seguirá siendo un sticky. 
+ */
