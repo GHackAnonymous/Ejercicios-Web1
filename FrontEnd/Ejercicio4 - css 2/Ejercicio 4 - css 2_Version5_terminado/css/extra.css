@@ -1,0 +1,62 @@
+img:hover{
+    max-width: calc(100% + 300px)!important; 
+    max-height: calc(100% + 300px)!important;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+};
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+h1:hover{
+	font-size: calc(100% + 10px);
+	color: red;
+}
+h2:hover{
+	font-size: calc(100% + 10px);
+	color: red;
+}
+h3:hover{
+	font-size: calc(100% + 10px);
+	color: red;
+}
+h4:hover{
+	font-size: calc(100% + 10px);
+	color: red;
+}
+p:hover{
+	font-size: calc(100% + 10px);
+	color: red;
+}
+nav:hover{
+	font-size: calc(100% + 10px);
+}
+#sports-sec>article>img{
+    max-width: 100px; 
+    max-height: 100px;
+}
+#social-sec>article>img{
+    max-width: 100px; 
+    max-height: 100px;
+}
+@media (max-width: 1200px) {
+body{
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+aside{
+	width: 100%;
+}
+#news-sec{
+	width: 100%;
+}
+}
+aside{
+	min-width: max-width: 100px;
+}
+
+/*Lo de poner imágenes al lado del texto está sin hacer*/
