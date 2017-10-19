@@ -1,0 +1,113 @@
+*{
+	width:100%;
+	float: left;
+}
+header{
+	width:98.7%;
+	border: solid;
+	border-radius: 10px;
+	float: left;
+	text-align: center;
+}
+.navoption{
+	width: calc((100% / 6) - 4px);
+	background-color: blue;
+	color: white;
+	border-radius: 10px;
+	float: left;
+	margin-left: 2px;
+	
+}
+.navoption>a{
+	text-decoration: none;
+	text-decoration-color: white;
+	color: white;
+	text-align: center;
+}
+.navoption:hover{
+	position: relative; 
+    top: -5px;
+}
+article{
+	width: 100%;
+	float:left;
+	align-content: center;
+	height: 95%;
+}
+section{
+	border: 2px solid;
+	margin: 1px;
+	width: calc((100% /3) - 10px);
+	height:50vh;
+	display: inline-block;
+}
+section:hover{
+	box-shadow: -8px -8px 20px 0px grey;
+}
+section:active {
+box-shadow: -4px -4px 20px 0px grey;
+}
+section>h2{
+	background-color: black;
+	color: white;
+	text-align: center;
+	
+}
+section>p{
+	float: left;
+	
+}
+section>p>img{
+	float: right;
+	display: block;
+	max-height: 50px;
+	max-width: 100px;
+	height: 50 px;
+	width: 100px;
+}
+footer{
+	position: relative;
+	bottom: 0px;
+	width: 99%;
+	float:left;
+	background-color: black;
+	align-content: right;
+	text-align: right;
+	color: white;
+	margin-top: 10px;
+}
+footer>button{
+	float:right;
+	width: 100px;
+	margin-left: 2px;
+}
+footer>p{
+	float:right;
+	width: calc((100% / 3) - 30px);
+}
+
+@media only screen and (min-width: 500px) and (max-width: 750px) {
+	body{
+		clear:both;
+		width: 95%;
+	}
+	section{
+		clear:both;
+		width: calc((100% / 2) - 10px);
+		height:50vh;
+	}
+}
+@media only screen and (max-width: 500px) {
+	body{
+		clear:both;
+		width: 95%;
+	}
+	section{
+		clear:both;
+		width: 100%;
+	}
+	.navoption{
+		clear:both;
+		width: 100%;
+	}
+}

@@ -1,0 +1,83 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<title>HTML, CSS & JS - 1718</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Creative Commons licenses</h1>
+			<nav>
+				<div class="navoption" id="byNav">
+					<a href="#by" onclick="aparecer('by')">BY</a>
+				</div>
+				<div class="navoption" id="by-saNav">
+					<a href="#by-sa"onclick="aparecer('by-sa')">BY-SA</a>
+				</div>
+				<div class="navoption" id="by-ndNav">
+					<a href="#by-nd" onclick="aparecer('by-nd')">BY-ND</a>
+				</div>
+				<div class="navoption" id="by-ncNav">
+					<a href="#by-nc" onclick="aparecer('by-nc')">BY-NC</a>
+				</div>
+				<div class="navoption" id="by-nc-saNav">
+					<a href="#by-nc-sa" onclick="aparecer('by-nc-sa')">BY-NC-SA</a>
+				</div>
+				<div class="navoption" id="by-nc-ndNav">
+					<a href="#by-nc-nd" onclick="aparecer('by-nc-nd')">BY-NC-ND</a>
+				</div>
+			</nav>
+		</header>
+		<article id="Cuerpo">
+			<section id="by" class="tema" onclick="desAparecer('by')">
+				<h2>Attribution</h2>
+				<p>
+					<img src="img/by.png"/>
+					This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials.
+				</p>
+			</section>
+			<section id="by-sa" class="tema" onclick="desAparecer('by-sa')">
+				<h2>Attribution-Share Alike</h2>
+				<p>
+					<img src="img/by-sa.png"/>
+					This license lets others remix, tweak, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms. This license is often compared to “copyleft” free and open source software licenses. All new works based on yours will carry the same license, so any derivatives will also allow commercial use. This is the license used by Wikipedia, and is recommended for materials that would benefit from incorporating content from Wikipedia and similarly licensed projects.
+				</p>
+			</section>
+			<section id="by-nd" class="tema" onclick="desAparecer('by-nd')">
+				<h2>Attribution-No Derivatives</h2>
+				<p>
+					<img src="img/by-nd.png"/>
+					This license allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to you.
+				</p>
+			</section>
+			<section id="by-nc" class="tema" onclick="desAparecer('by-nc')">
+				<h2>Attribution-Non Commercial</h2>
+				<p>
+					<img src="img/by-nc.png"/>
+					This license lets others remix, tweak, and build upon your work non-commercially, and although their new works must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the same terms.
+				</p>
+			</section>
+			<section id="by-nc-sa" class="tema" onclick="desAparecer('by-nc-sa')">
+				<h2>Attribution-Non Commercial-Share Alike</h2>
+				<p>
+					<img src="img/by-sa.png"/>
+					This license lets others remix, tweak, and build upon your work non-commercially, as long as they credit you and license their new creations under the identical terms.
+				</p>
+			</section>
+			<section id="by-nc-nd" class="tema" onclick="desAparecer('by-nc-nd')">
+				<h2>Attribution-NonCommercial-NoDerivatives</h2>
+				<p>
+					<img src="img/by-nd.png"/>
+					This license is the most restrictive of our six main licenses, only allowing others to download your works and share them with others as long as they credit you, but they can’t change them in any way or use them commercially.
+				</p>
+			</section>
+		</article>
+		<footer>
+			<p>Teacher: Alain Perez Riaño 2017-10-11</p>
+			<button onclick="light()">Light theme</button>
+			<button onclick="dark()">Dark theme</button>
+		</footer>
+	</body>
+</html>
