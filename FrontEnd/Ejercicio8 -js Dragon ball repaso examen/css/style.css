@@ -30,29 +30,38 @@ header>h1{
 	background-color: rgb(255, 255, 255);
 }
 #div_menu_db{
-	width: 31%;
+	width: calc((100% / 4) - 1%);
 	float: left;
 	border: solid black 1px;
 	text-align: center;
-	margin-left: 1%;
+	margin-left: 10px;
 	background-color: rgb(0, 0, 0);
 	border-radius: 10px;
 }
 #div_menu_dbz{
-	width: 31%;
+	width: calc((100% / 4) - 1%);
 	float: left;
 	border: solid black 1px;
 	text-align: center;
-	margin-left: 1%;
+	margin-left: 10px;
+	background-color: rgb(0, 0, 0);
+	border-radius: 10px;
+}
+#div_menu_todo{
+	width: calc((100% / 4) - 1%);
+	float: left;
+	border: solid black 1px;
+	text-align: center;
+	margin-left: 10px;
 	background-color: rgb(0, 0, 0);
 	border-radius: 10px;
 }
 #div_menu_dbgt{
-	width: 31%;
+	width: calc((100% / 4) - 1%);
 	float: left;
 	border: solid black 1px;
 	text-align: center;
-	margin-left: 1%;
+	margin-left: 10px;
 	background-color: rgb(0, 0, 0);
 	border-radius: 10px;
 }
@@ -76,22 +85,19 @@ section{
 	margin-top: 0.5%;
 	margin-left: 2.5%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	height: 73vh;
 }
-section>h1{
-	
+section>.uno>p{
+	float: left;
 }
-section>p{
-	
+.uno>p>img{
+	max-width: 50px;
+	max-height: 50px;
+	display: block;
+	float: right;
+	margin: 100px;
 }
-section>img{
-	max-width: 20%;
-	max-height: 20%;
-	height: 20%;
-	width: 20%;
-	position: relative;
-
-	
+.dos{
+	width: 32%;
 }
 #div_footer{
 	width: 100%;
@@ -104,4 +110,7 @@ section>img{
 #div_footer>p{
 	text-align: center;
 	clear: both;
+}
+div{
+	border: 1px black solid;
 }
