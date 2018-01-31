@@ -1,0 +1,137 @@
+body{
+	margin:0;
+	padding:0;
+    font-family: Verdana,Geneva,sans-serif;
+    background-color:#cecece;
+}
+header{
+	top:0;
+	margin:0;
+	padding:0;
+	width:100%;
+	background-color:black;
+	border-bottom:4px solid red;
+	color:white;
+}
+header div.options{
+	float:right;
+	text-align:right;
+}
+header div.lang, header div.logout{
+	display:inline-block;
+	margin-left:1em;
+}
+header div.lang a{
+	color:white;
+	padding:4px;
+	margin:4px;
+    text-decoration: none;
+}
+header div.lang a:hover{
+	text-decoration: underline;
+}
+header > h1{
+	padding: 32px;
+	margin: 0;
+}
+header nav{
+	display:block;
+	margin:0;
+	padding:0;
+	width:100%;
+	clear:both;
+}
+header nav a{
+	
+	display:inline-block;
+	margin:8px;
+	padding:8px;
+	border:2px solid white;
+	width:calc(33.33333333333% - 36px);
+	border-radius:4px;
+	text-align:center;
+	color:white;
+    text-decoration: none;
+}
+header nav a:hover, header nav a.current{
+	border-color:red;
+	text-decoration:underline;
+	color:black;
+	background-color:#cecece;
+}
+.error{
+	margin:8px;
+	padding:4px;
+	background-color: rgba(192,0,0,0.2);
+	color: red;;
+	border:1px solid black;
+	border-radius:4px;
+}
+
+.message{
+	margin:8px;
+	padding:4px;
+	background-color: rgba(0,192,0,0.2);
+	color: green;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+section.mainContent{
+	margin-bottom: 4em;
+}
+
+table{
+	border-collapse: collapse;
+	width:100%;
+}
+
+td,th{
+	text-align:center;
+	border:1px solid black;
+	padding: 8px;
+}
+
+td > a{
+	border:1px;
+}
+article{
+	margin:16px;
+	padding:16px;
+	background-color:white;
+	box-shadow: 0 0 16px rgba(0,0,0,0.8);
+	transition: all .2s linear;
+}
+article:hover{
+	box-shadow: 0 0 4px rgba(0,0,0,0.8);
+	transition: all .2s linear;
+}
+article.newsItem p.otherInfo span{
+	font-size:70%;
+	color:#BEBEBE;
+}
+span.date{
+	display:block;
+}
+
+textarea.contentBody{
+	width:100%;
+	min-height:256px;
+}
+footer{
+	width:calc(100% - 8px);
+	position:fixed;
+	bottom:0;
+	left:0;
+	margin:0;
+	padding:4px;
+	border-top:4px solid red;
+	background-color:black;
+	color:white;
+	text-align:right;
+}
+
+footer span{
+	font-weight:bold;
+	font-style:italic;
+}
