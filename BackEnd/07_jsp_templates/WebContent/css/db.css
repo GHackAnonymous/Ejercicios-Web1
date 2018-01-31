@@ -1,0 +1,51 @@
+body{
+	background-color:#CECECE;
+}
+header{
+	border:1px solid black;
+	text-align:center;
+	background-color:white;
+}
+nav span{
+	text-align:center;
+	border: 1px solid black;
+	display:inline-block;
+	width:calc(25% - 18px);
+	padding:4px;
+	margin:4px;
+	border-radius:4px;
+}
+
+nav span.current-nav, nav span:hover{
+	background-color:black;
+	color:white;
+	font-weight: bold;
+}
+article{
+	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+	background-color:white;
+	padding:32px;
+	margin:32px;
+}
+article img{
+	display:inline-block;
+	float:right;
+	margin:0 0 8px 8px;
+	width: 20%;
+	
+}
+section{
+	margin-bottom:5em;
+}
+footer{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	text-align:center;
+	background-color:rgba(255,255,255,.8);
+	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+}
+footer span{
+	font-style:italic;
+}

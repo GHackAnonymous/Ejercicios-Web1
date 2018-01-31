@@ -1,0 +1,11 @@
+@media (max-width: 600px){
+	nav span{
+		width:calc(50% - 18px);
+	}
+}
+@media (max-width: 400px){
+	nav span{
+		width:calc(100% - 18px);
+	}
+	
+}
