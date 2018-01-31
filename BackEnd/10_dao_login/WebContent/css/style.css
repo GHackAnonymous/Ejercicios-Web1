@@ -1,0 +1,13 @@
+.error{
+	background-color: rgba(192,0,0,0.2);
+	color: red;;
+	border:1px solid black;
+	border-radius:4px;
+}
+
+.message{
+	background-color: rgba(0,192,0,0.2);
+	color: green;
+	border: 1px solid black;
+	border-radius: 4px;
+}
