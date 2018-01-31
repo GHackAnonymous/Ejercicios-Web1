@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+header nav a{
+	width:calc(25% - 36px);
+}
+
+section#social{
+	position: fixed;
+	padding: 8px;
+	right: 8px;
+	bottom: 3em;
+	background-color: #CECECE;
+	box-shadow: 0 0 16px rgba(0,0,0,0.8);
+	
+}
+div#socialNetwork{
+	display: inline;
+}
+section#social img{
+	position:relative;
+	bottom:-0.6em;
+	max-width:2em;
+	max-height:2em;
+}
+section#social form{
+	display: inline;	
+}
