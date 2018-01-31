@@ -9,6 +9,7 @@
 <title>DAO login</title>
 </head>
 <body>
+
 <c:if test="${not empty requestScope.error}">
 	<p class="error"><c:out value="${requestScope.error}"/></p>
 </c:if>
