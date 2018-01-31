@@ -45,7 +45,7 @@ section:hover{
 	box-shadow: -8px -8px 20px 0px grey;
 }
 section:active {
-box-shadow: -4px -4px 20px 0px grey;
+	box-shadow: -4px -4px 20px 0px grey;
 }
 section>h2{
 	background-color: black;
